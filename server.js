@@ -12,8 +12,6 @@ const DB_URI = process.env.DB_URI
 //   connectToDB();
 // });
 
-import { connectToDB } from "./db.js";
-
 export default async function handler(req, res) {
   try {
     await connectToDB();
